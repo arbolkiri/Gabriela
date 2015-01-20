@@ -2,48 +2,59 @@
     box-sizing: border-box;
 }
 
-.main {
-	position: relative;
-	overflow-y: auto;
-	background-color: #1E90FF;
-	margin: auto;
-	color: white;
+.grid {
+    text-align: justify;
+    font-size: 0;
 }
 
-.main > *{
-	float: left;
-    width: 33%}
-
-#grid {
-	font-size: 12px;
-    text-align: center;
-    position: relative;
-}
 .grid::after {
     content: " ";
     display: inline-block;
     width: 100%;
 }
+.grid > * {
+    display: inline-block;
+    width: 100%;
+    font-size: medium;
+    vertical-align: top;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    transition: all .5s ease;
+}
+.main {
+    position: relative;
+    overflow-y: auto;
+    background-color: #1E90FF;
+    margin: auto;
+    color: white;
+}
+.main > * {
+    float: left;
+    width: 33%
+}
+.grid {
+    font-size: 10px;
+    text-align: center;
+    position: relative;
+}
 
-}
-input:hover{
-	
-}
+input:hover {} 
+
 textarea {
-	width: 100%;
-	padding: 15px;
-	margin-top: 10px;
-	border: 1px solid #7ac9b7;
-	margin-bottom: 15px;
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    border: 1px solid #7ac9b7;
+    margin-bottom: 15px;
 }
-input[type=text]{
-	margin: auto;
-    width:33%;
-padding: 10px;
-border-color: white;
-
-
+input[type=text] {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    border-color: white;
+    
 }
 
-
-
+label {
+    font-size: 11px;
+}
